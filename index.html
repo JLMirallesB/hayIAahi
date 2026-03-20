@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Hay IA ahí? Ay… la música</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-section">
+                <div class="hourglass-container">
+                    <svg class="hourglass" viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+                            </filter>
+                            <linearGradient id="sandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#404040;stop-opacity:1" />
+                            </linearGradient>
+                            <radialGradient id="glassGradient" cx="50%" cy="30%">
+                                <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.1" />
+                                <stop offset="100%" style="stop-color:#000000;stop-opacity:0" />
+                            </radialGradient>
+                        </defs>
+
+                        <!-- Main frame group -->
+                        <g class="hourglass-frame">
+                            <!-- Top chamber - main shape -->
+                            <path d="M 25 8 L 95 8 L 70 52 L 50 52 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+
+                            <!-- Top chamber - glass effect -->
+                            <ellipse cx="60" cy="15" rx="35" ry="6" fill="url(#glassGradient)" opacity="0.6"/>
+
+                            <!-- Middle narrow connector -->
+                            <rect x="56" y="50" width="8" height="60" fill="none" stroke="currentColor" stroke-width="2.5" rx="1"/>
+
+                            <!-- Bottom chamber - main shape -->
+                            <path d="M 50 110 L 70 110 L 95 154 L 25 154 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+
+                            <!-- Bottom chamber - glass effect -->
+                            <ellipse cx="60" cy="148" rx="35" ry="6" fill="url(#glassGradient)" opacity="0.6"/>
+
+                            <!-- Connection ornaments -->
+                            <circle cx="60" cy="48" r="3" fill="currentColor"/>
+                            <circle cx="60" cy="112" r="3" fill="currentColor"/>
+                        </g>
+
+                        <!-- Sand particles - falling animation -->
+                        <g class="sand-particles-falling" opacity="0.9">
+                            <!-- Particle 1 -->
+                            <circle cx="58" cy="55" r="1.5" fill="url(#sandGradient)"/>
+                            <!-- Particle 2 -->
+                            <circle cx="62" cy="65" r="1.2" fill="url(#sandGradient)"/>
+                            <!-- Particle 3 -->
+                            <circle cx="57" cy="75" r="1.3" fill="url(#sandGradient)"/>
+                            <!-- Particle 4 -->
+                            <circle cx="63" cy="85" r="1.1" fill="url(#sandGradient)"/>
+                            <!-- Particle 5 -->
+                            <circle cx="60" cy="95" r="1.4" fill="url(#sandGradient)"/>
+                        </g>
+
+                        <!-- Sand pool at bottom -->
+                        <g class="sand-pool" opacity="0" style="will-change: opacity;">
+                            <ellipse cx="60" cy="135" rx="20" ry="8" fill="url(#sandGradient)" opacity="0.4"/>
+                            <path d="M 45 135 Q 50 140 60 142 Q 70 140 75 135" fill="url(#sandGradient)" opacity="0.3"/>
+                            <circle cx="52" cy="138" r="2" fill="url(#sandGradient)" opacity="0.5"/>
+                            <circle cx="68" cy="140" r="1.5" fill="url(#sandGradient)" opacity="0.5"/>
+                        </g>
+
+                        <!-- Ambient glow -->
+                        <circle cx="60" cy="80" r="45" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.1" class="glow-pulse"/>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="main-title">¿Hay IA ahí?<br><span class="subtitle-accent">Ay… la música</span></h1>
+        </header>
+
+        <main class="content">
+            <section class="abstract">
+                <h2>Resumen</h2>
+                <p>
+                    La fascinación humana por las máquinas capaces de hacer música es muy anterior a la era digital.
+                    Sin embargo, el desarrollo reciente de la inteligencia artificial generativa ha provocado un auge
+                    sin precedentes en la creación musical mediante algoritmos. En esta ponencia exploraremos la diferencia
+                    entre generar estructuras simbólicas, como partituras o secuencias, y generar directamente sonido en
+                    forma de audio. Abordaremos las tecnologías implicadas en ambos enfoques, sus posibilidades y sus límites,
+                    y abriremos una reflexión sobre una pregunta de fondo: ¿es música todo aquello que sale de "ahí"?
+                </p>
+            </section>
+
+            <section class="speaker">
+                <h2>Ponente</h2>
+                <div class="speaker-info">
+                    <h3>José Luis Miralles Bono</h3>
+                    <div class="cv-short">
+                        <p>
+                            Doctor en Educación por la Universitat Jaume I; máster en Música, especialidad Música Contemporánea (UPV),
+                            máster en Psicología para Músicos (UNED), máster en Gestión y Dirección de Centros Docentes (UCHCEU) y
+                            máster en Arte Sonoro (UB). Jefe de Estudios en el CPM Mestre Tárrega de Castellón, siendo funcionario de
+                            carrera por oposición (2008) en la especialidad de Piano; e impartiendo también las asignaturas optativas
+                            de Informática Musical e Introducción a la Pedagogía Musical (optativa de creación propia que imparte desde
+                            el curso 2017). Su experiencia docente en el ámbito de la Educación Superior comprende docencia en la Universidad
+                            Jaume I en los grados de maestros/as de infantil y primaria —mención de música— y en el Máster Universitario
+                            de Didáctica de la Música para la formación de docentes de Conservatorios y Escuelas de Música. Así como Grados
+                            Artísticos y Másters Artísticos en ESMAR en los ámbitos de la informática musical, la pedagogía musical y
+                            métodos de evaluación en música.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="status">
+                <p class="status-text">Página en construcción • Vuelve pronto</p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 • José Luis Miralles Bono</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
