@@ -11,3 +11,11 @@ Thumbs.db
 # Node (si en futuro se usa)
 node_modules/
 npm-debug.log
+
+# Claude Code — estado local de esta máquina, no del proyecto
+.claude/*
+!.claude/settings.json
+!.claude/commands/
+!.claude/agents/
+!.claude/skills/
+CLAUDE.local.md
